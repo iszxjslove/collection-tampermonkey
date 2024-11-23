@@ -68,9 +68,9 @@
 import { commonPost, padWithZero, useHotKey } from "src/assets/helper";
 import { computed, onUnmounted, reactive, watch } from "vue";
 const state = reactive({
-  preview: true,
-  url: "https://tyc229.com/images_web/tyc/icon_{item}_{item}.png.webp?v=1731411173350",
-  filename: "ag bbin cq9 fc jdb ky leg mg pg pp wl",
+  preview: false,
+  url: "",
+  filename: "",
   filenameTemplate: computed(() => {
     const match = state.url.match(/\/([^/?]+)(\?|$)/);
     if (!match || !match[1]) {
