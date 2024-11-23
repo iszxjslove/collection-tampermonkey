@@ -180,7 +180,9 @@ function generateIndexs(item, urls) {
 }
 
 function parseIndexs(url) {
-  const match = url.match(/\{item\}/g);
+  const match = url.match(/\{index\}/g);
+  console.log(match);
+
   if (!match) {
     return [];
   }
